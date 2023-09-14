@@ -1,5 +1,5 @@
 import { openai } from "~/utils/openai";
-import { CreateChatCompletionRequestMessage } from "openai/resources/chat";
+import type { CreateChatCompletionRequestMessage } from "openai/resources/chat";
 
 export const getFortune = async () => {
   const date = new Date().toLocaleDateString("en-US");
